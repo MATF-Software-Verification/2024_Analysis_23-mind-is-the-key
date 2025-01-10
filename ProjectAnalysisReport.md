@@ -42,3 +42,35 @@ Za pokretanje alata potrebno je pozicionirati se u `build` direktorijum i izvrš
 Rezultat je `No bugs found` što se može videti na slici:
 
 ![img](clang/clang-analyzer/ClangAnalyzer.png)
+
+### Cppcheck
+**Cppcheck** je alat koji se koristi za statičku analizu C i C++ koda. Osnovna uloga je otkrivanje potencijalnih problema pre pokretanja programa. Detektuje curenja memorije, neinicijalizovane promenljive, probleme sa pokazivačima...
+Da bi se instalirao *Cppcheck* alat potrebno je pokrenuti sledeću komandu:
+```
+sudo apt-get install cppcheck
+```
+
+Alat se pokreće komandom 
+```
+cppcheck --enable=all --output-file="cppcheck.txt" ../23-mind-is-the-key/client/src/
+```
+u kojoj `--enable=all` omogućava sve dostupne provere, `--output-file="cppcheck.txt"`omogućava da se rezultat analize upiše u novokreirani fajl *cppcheck.txt*, a `../23-mind-is-the-key/client/src/` se odnosi na putanju do fajlova koji će biti uključeni u analizu.
+
+Prikaz pokretanja komande, kreiranje fajla za rezultat i sadržaj rezultata:
+
+![img](cppcheck/Cppcheck1.png)
+
+Rezultat pokretanja [skipte](cppcheck/cppcheck.sh) se nalazi u [fajlu](cppcheck/cppcheck.txt).
+
+Moguće je uključiti opciju `--suppress=missingInclude` i na taj način cppcheck će zanemariti sve poruke koje ukazuju na nedostatak potrebnih uključivanja (header files).
+
+[Skipta](cppcheck/cppcheck_suppress.sh), kreiranje izlaznog fajla [cppcheck_suppress.txt](cppcheck/cppcheck_suppress.txt) i sadržaj rezultata se nalazi na sledećoj slici:
+
+![img](cppcheck/Cppcheck2.png)
+
+Pokretanje [skipte](cppcheck/cppcheck_client_server.sh) prikazano je na narednoj slici:
+
+![img](cppcheck/Cppcheck3.png)
+
+`../23-mind-is-the-key` označava da će u analizu biti uključeni svi fajlovi iz korenog direktorijuma, a rezultat se generisao u fajlu [cppcheck_client_server.txt](cppcheck/cppcheck_client_server.txt)
+
