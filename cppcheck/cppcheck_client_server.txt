@@ -1,0 +1,108 @@
+../23-mind-is-the-key/build/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 110 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+../23-mind-is-the-key/build/MindIsTheKey_autogen/QZF4QSHV6L/moc_gameover.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/MindIsTheKey_autogen/QZF4QSHV6L/moc_help.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/MindIsTheKey_autogen/QZF4QSHV6L/moc_howtoplay.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/MindIsTheKey_autogen/QZF4QSHV6L/moc_login.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/MindIsTheKey_autogen/QZF4QSHV6L/moc_mainmenu.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/MindIsTheKey_autogen/QZF4QSHV6L/moc_mainwindow.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/MindIsTheKey_autogen/QZF4QSHV6L/moc_questionsbox.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/MindIsTheKey_autogen/QZF4QSHV6L/moc_servergame.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/MindIsTheKey_autogen/QZF4QSHV6L/moc_serverlogin.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/MindIsTheKey_autogen/mocs_compilation.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/Server_autogen/ORNZQ2F6DW/moc_tcpserver.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/Server_autogen/mocs_compilation.cpp:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+../23-mind-is-the-key/build/qrc_resourcestmp.cpp:510:0: information: Skipping configuration 'QT_NAMESPACE' since the value of 'QT_NAMESPACE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+namespace QT_NAMESPACE {
+^
+../23-mind-is-the-key/build/qrc_resourcestmp.cpp:524:0: information: Skipping configuration 'QT_NAMESPACE' since the value of 'QT_NAMESPACE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    QT_RCC_PREPEND_NAMESPACE(qRegisterResourceData)
+^
+../23-mind-is-the-key/build/qrc_resourcestmp.cpp:532:0: information: Skipping configuration 'QT_NAMESPACE' since the value of 'QT_NAMESPACE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    QT_RCC_PREPEND_NAMESPACE(qUnregisterResourceData)
+^
+../23-mind-is-the-key/client/src/howtoplay.cpp:21:22: style: Variable 'number_of_lines' is assigned a value that is never used. [unreadVariable]
+ int number_of_lines = 0;
+                     ^
+../23-mind-is-the-key/client/src/login.cpp:91:22: style: Same expression on both sides of '=='. [duplicateExpression]
+  if (p1 == "" or p2 == "" or p3 == "" or p4 == "") {
+                     ^
+../23-mind-is-the-key/client/src/login.cpp:105:22: style: Same expression on both sides of '=='. [duplicateExpression]
+  if (p1 == "" or p2 == "" or p3 == "") {
+                     ^
+../23-mind-is-the-key/client/src/login.cpp:117:22: style: Same expression on both sides of '=='. [duplicateExpression]
+  if (p1 == "" or p2 == "") {
+                     ^
+../23-mind-is-the-key/server/questionslist.h:11:2: style: Class 'QuestionsList' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+ QuestionsList(QList<Question *> list) : questions_list(list)
+ ^
+../23-mind-is-the-key/server/question.h:13:23: performance: Function parameter 'question_text' should be passed by const reference. [passedByValue]
+ Question(std::string question_text, std::string answer) : m_question(question_text), m_answer(answer)
+                      ^
+../23-mind-is-the-key/server/question.h:13:50: performance: Function parameter 'answer' should be passed by const reference. [passedByValue]
+ Question(std::string question_text, std::string answer) : m_question(question_text), m_answer(answer)
+                                                 ^
+../23-mind-is-the-key/server/question.cpp:15:41: performance: Function parameter 'question' should be passed by const reference. [passedByValue]
+void Question::set_question(std::string question)
+                                        ^
+../23-mind-is-the-key/server/question.cpp:20:39: performance: Function parameter 'ans' should be passed by const reference. [passedByValue]
+void Question::set_answer(std::string ans)
+                                      ^
+../23-mind-is-the-key/server/tcpserver.cpp:11:12: warning: Member variable 'TcpServer::m_server' is not initialized in the constructor. [uninitMemberVar]
+TcpServer::TcpServer(QObject *parent) : QObject(parent)
+           ^
+../23-mind-is-the-key/server/tcpserver.cpp:11:12: warning: Member variable 'TcpServer::start_timer' is not initialized in the constructor. [uninitMemberVar]
+TcpServer::TcpServer(QObject *parent) : QObject(parent)
+           ^
+../23-mind-is-the-key/server/tcpserver.cpp:11:12: warning: Member variable 'TcpServer::ql' is not initialized in the constructor. [uninitMemberVar]
+TcpServer::TcpServer(QObject *parent) : QObject(parent)
+           ^
+../23-mind-is-the-key/server/tcpserver.cpp:81:3: style: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+  return;
+  ^
+../23-mind-is-the-key/server/tcpserver.cpp:253:13: style: Local variable 'i' shadows outer variable [shadowVariable]
+   for (int i = 0; i < roll; i++) {
+            ^
+../23-mind-is-the-key/server/tcpserver.cpp:243:7: note: Shadowed declaration
+  int i = m_clients[cl];
+      ^
+../23-mind-is-the-key/server/tcpserver.cpp:253:13: note: Shadow variable
+   for (int i = 0; i < roll; i++) {
+            ^
+../23-mind-is-the-key/server/tcpserver.cpp:97:25: style: Variable 'socketIpAdress' is assigned a value that is never used. [unreadVariable]
+ QString socketIpAdress = client->peerAddress().toString();
+                        ^
+../23-mind-is-the-key/server/tcpserver.cpp:166:15: style: Variable 'data' is assigned a value that is never used. [unreadVariable]
+ QString data = QString(client->readAll());
+              ^
+../23-mind-is-the-key/server/question.cpp:20:0: style: The function 'set_answer' is never used. [unusedFunction]
+
+^
+../23-mind-is-the-key/server/question.cpp:15:0: style: The function 'set_question' is never used. [unusedFunction]
+
+^

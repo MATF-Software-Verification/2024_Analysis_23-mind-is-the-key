@@ -1,0 +1,12 @@
+../23-mind-is-the-key/client/src/howtoplay.cpp:21:22: style: Variable 'number_of_lines' is assigned a value that is never used. [unreadVariable]
+ int number_of_lines = 0;
+                     ^
+../23-mind-is-the-key/client/src/login.cpp:91:22: style: Same expression on both sides of '=='. [duplicateExpression]
+  if (p1 == "" or p2 == "" or p3 == "" or p4 == "") {
+                     ^
+../23-mind-is-the-key/client/src/login.cpp:105:22: style: Same expression on both sides of '=='. [duplicateExpression]
+  if (p1 == "" or p2 == "" or p3 == "") {
+                     ^
+../23-mind-is-the-key/client/src/login.cpp:117:22: style: Same expression on both sides of '=='. [duplicateExpression]
+  if (p1 == "" or p2 == "") {
+                     ^
