@@ -34,3 +34,11 @@ Nakon toga je potrebno kopirati default-nu konfiguraciju, preimenovati je (u mom
 Nakon ponovnog pokretanje analize primećujemo da ima mnogo više upozorenja i potencijalnih izmena u cilju poboljšanja koda:
 
 ![img](clang/clang-tidy_clazy/ClangTidyAndClazy6.png)
+
+### ClangAnalyzer
+**ClangAnalyzer** je alat za statičku analizu koda koji efikasno otkriva curenje memorije, probleme sa neinicijalizovanim promenljivama i dereferenciranje `null` pokazivača.
+Fokusiran je na otkrivanje logičkih grešaka i pogodan je za velike projekte gde je teško ručno identifikovati greške.
+Za pokretanje alata potrebno je pozicionirati se u `build` direktorijum i izvršiti sledeću komandu `scan-build make`.
+Rezultat je `No bugs found` što se može videti na slici:
+
+![img](clang/clang-analyzer/ClangAnalyzer.png)
